@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+main {
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.jelovnik {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.jelovnik h2 {
+  text-align: center;
+  color: #333;
+}
+
+.obrok {
+  margin-bottom: 15px;
+}
+
+.obrok span {
+  font-weight: bold;
+}
+
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    footer a {
+      display: inline-block;
+      margin: 0 10px;
+      transition: transform 0.2s ease;
+    }
+
+    footer a:hover {
+      transform: scale(1.1);
+    }
+
+    footer img {
+      width: 30px;
+      height: 30px;
+      vertical-align: middle;
+      border-radius: 6px;
+    }
