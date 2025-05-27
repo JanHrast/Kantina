@@ -85,3 +85,41 @@ body {
       vertical-align: middle;
       border-radius: 6px;
     }
+
+a {
+  background-color: black;
+     color: white;
+     padding: 10px 20px;
+     text-decoration: none;
+     border-radius: 5px;
+     display: inline-block;
+     font-family: sans-serif;
+}
+
+.row {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+}
+
+.slika-blok {
+  width: 300px;
+  text-align: center;
+}
+
+.kantina-slika {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gumb {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: sans-serif;
+  display: inline-block;
+  margin-top: 10px;
+}
