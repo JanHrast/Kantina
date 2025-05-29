@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>Radnici - Školska Kantina</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+    .radnik-detalji {
+      display: none;
+      margin-top: 10px;
+      font-size: 0.95rem;
+      background-color: #eaeaea;
+      padding: 10px;
+      border-left: 4px solid #000;
+      border-radius: 6px;
+    }
+    
+    nav {
+      background-color: #333;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      background-color: #000;
+      color: #fff;
+      padding: 10px 20px;
+      margin: 0 10px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+    
+    .gumb-toggle {
+      margin-top: 10px;
+      padding: 6px 12px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .gumb-toggle:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dobrodošli, Radnici Školske Kantine</h1>
+  </header>
+
+<nav>
+    <a href="index.html">Pocetna</a>
+    <a href="hrana.html">Hrana</a>
+    <a href="cjenik.html">Cjenik</a>
+    <a href="grickalice.html">Grickalice</a>
+    <a href="pica.html">Pića</a>
+    <a href="akcije.html">Akcije</a>
+  </nav>
+
+  <main>
+    <div class="tekst">
+      <h2>Naš tim</h2>
+      <p>Upoznajte glavne članove osoblja naše školske kantine:</p>
+
+      <div class="radnik">
+        <strong>Anita Kovač</strong> – Voditeljica kantine<br>
+        <button class="gumb-toggle" onclick="toggleDetalji(this)">Prikaži detalje</button>
+        <div class="radnik-detalji">
+          Zadužena za planiranje jelovnika, koordinaciju osoblja i nadzor nad kvalitetom hrane.
+        </div>
+      </div>
+
+      <div class="radnik" style="margin-top: 20px;">
+        <strong>Ivan Horvat</strong> – Glavni kuhar<br>
+        <button class="gumb-toggle" onclick="toggleDetalji(this)">Prikaži detalje</button>
+        <div class="radnik-detalji">
+          Specijaliziran za pripremu toplih jela, odgovoran za sigurnost i higijenu u kuhinji.
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Školska Kantina. </p>
+    <a href="tel:+123456789" title="Nazovi nas">
+      <img src="https://static.vecteezy.com/system/resources/previews/003/720/476/non_2x/phone-icon-telephone-icon-symbol-for-app-and-messenger-vector.jpg" alt="Telefon">
+    </a>
+    <a href="mailto:info@example.com" title="Pošalji e-mail">
+      <img src="https://static.vecteezy.com/system/resources/previews/006/697/974/non_2x/mail-email-icon-template-black-color-editable-mail-email-icon-symbol-flat-illustration-for-graphic-and-web-design-free-vector.jpg" alt="Email">
+    </a>
+   <a href="lokacija.html" target="_self" title="Pogledaj lokaciju">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEZPn39NjtteMrJeQKHUZmu9AsNxG2DYZIxA&s" alt="Lokacija">
+    </a>
+  </footer>
+
+  <script>
+    function toggleDetalji(gumb) {
+      const detalji = gumb.nextElementSibling;
+      if (detalji.style.display === "block") {
+        detalji.style.display = "none";
+        gumb.textContent = "Prikaži detalje";
+      } else {
+        detalji.style.display = "block";
+        gumb.textContent = "Sakrij detalje";
+      }
+    }
+  </script>
+</body>
+</html>
+
+
