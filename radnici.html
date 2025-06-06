@@ -2,9 +2,58 @@
 <html lang="hr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Radnici - Školska Kantina</title>
   <link rel="stylesheet" href="style.css">
   <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    nav {
+      background-color: #333;
+      text-align: center;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      background-color: #000;
+      color: #fff;
+      padding: 10px 15px;
+      margin: 5px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .tekst {
+      max-width: 700px;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .radnik {
+      margin-bottom: 20px;
+    }
 
     .radnik-detalji {
       display: none;
@@ -15,25 +64,7 @@
       border-left: 4px solid #000;
       border-radius: 6px;
     }
-    
-    nav {
-      background-color: #333;
-      text-align: center;
-      padding: 10px 0;
-    }
 
-    nav a {
-      background-color: #000;
-      color: #fff;
-      padding: 10px 20px;
-      margin: 0 10px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 1rem;
-      display: inline-block;
-      transition: background-color 0.3s ease;
-    }
-    
     .gumb-toggle {
       margin-top: 10px;
       padding: 6px 12px;
@@ -49,6 +80,60 @@
     .gumb-toggle:hover {
       background-color: #444;
     }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer p {
+      margin: 0 0 10px;
+      font-size: 14px;
+    }
+
+    footer img {
+      width: 30px;
+      height: 30px;
+      vertical-align: middle;
+      border-radius: 6px;
+      margin: 0 5px;
+    }
+
+    /* 📱 RESPONSIVE STILOVI ZA MOBITELE */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 5px;
+      }
+
+      nav a {
+        margin: 5px;
+        font-size: 0.9rem;
+        padding: 8px 12px;
+      }
+
+      .tekst {
+        padding: 15px;
+      }
+
+      .gumb-toggle {
+        font-size: 0.9rem;
+        padding: 5px 10px;
+      }
+
+      footer img {
+        width: 25px;
+        height: 25px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -56,8 +141,8 @@
     <h1>Radnici Školske Kantine</h1>
   </header>
 
-<nav>
-    <a href="index.html">Pocetna</a>
+  <nav>
+    <a href="index.html">Početna</a>
     <a href="hrana.html">Hrana</a>
     <a href="cjenik.html">Cjenik</a>
     <a href="grickalice.html">Grickalice</a>
@@ -74,32 +159,31 @@
         <strong>Anita Kovač</strong> – Voditeljica kantine<br>
         <button class="gumb-toggle" onclick="toggleDetalji(this)">Prikaži detalje</button>
         <div class="radnik-detalji">
-          Zadužena za planiranje jelovnika, koordinaciju osoblja i nadzor nad kvalitetom hrane.
+         Anita Kovač je iskusna kuharica specijalizirana za planiranje i pripremu uravnoteženih obroka za djecu.<br>
+         Posebnu pažnju posvećuje kvaliteti namirnica i nutritivnoj vrijednosti jela, a poznata je po svom predanom radu i organizacijskim vještinama u školskom kuhinjskom okruženju.
         </div>
       </div>
 
-      <div class="radnik" style="margin-top: 20px;">
+      <div class="radnik">
         <strong>Ivan Horvat</strong> – Glavni kuhar<br>
         <button class="gumb-toggle" onclick="toggleDetalji(this)">Prikaži detalje</button>
         <div class="radnik-detalji">
-          Specijaliziran za pripremu toplih jela, odgovoran za sigurnost i higijenu u kuhinji.
+          Glavni kuhar s dugogodišnjim iskustvom u pripremi zdravih i ukusnih školskih obroka.<br>
+          Njegova specijalnost su topla jela pripremljena prema nutricionističkim smjernicama, a poznat je po preciznosti, kreativnosti i brizi za higijenu i sigurnost u kuhinji.
         </div>
       </div>
-
     </div>
   </main>
 
   <footer>
     <p>&copy; 2025 Školska Kantina. </p>
-    <a href="tel:+123456789" title="Nazovi nas">
-      <img src="https://static.vecteezy.com/system/resources/previews/003/720/476/non_2x/phone-icon-telephone-icon-symbol-for-app-and-messenger-vector.jpg" alt="Telefon">
-    </a>
-    <a href="mailto:info@example.com" title="Pošalji e-mail">
-      <img src="https://static.vecteezy.com/system/resources/previews/006/697/974/non_2x/mail-email-icon-template-black-color-editable-mail-email-icon-symbol-flat-illustration-for-graphic-and-web-design-free-vector.jpg" alt="Email">
-    </a>
-   <a href="lokacija.html" target="_self" title="Pogledaj lokaciju">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEZPn39NjtteMrJeQKHUZmu9AsNxG2DYZIxA&s" alt="Lokacija">
-    </a>
+    <a href="tel:+123456789">
+      <img src="https://static.vecteezy.com/system/resources/previews/003/720/476/non_2x/phone-icon-telephone-icon-symbol-for-app-and-messenger-vector.jpg" alt="Telefon"></a>
+      <a href="obrazac.html" target="_self" title="Pošalji e-mail">
+        <img src="https://static.vecteezy.com/system/resources/previews/006/697/974/non_2x/mail-email-icon-template-black-color-editable-mail-email-icon-symbol-flat-illustration-for-graphic-and-web-design-free-vector.jpg" alt="Email">
+      </a>
+    <a href="lokacija.html" target="_self" title="Pogledaj lokaciju">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEZPn39NjtteMrJeQKHUZmu9AsNxG2DYZIxA&s" alt="Lokacija"></a>
   </footer>
 
   <script>
@@ -116,5 +200,3 @@
   </script>
 </body>
 </html>
-
-
